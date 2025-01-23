@@ -1,6 +1,10 @@
 name: CI
 
-on: push
+on:
+  push:
+    tags:
+      - '*'
+
 
 env:
   ANDROID_NDK_VERSION: r25b
